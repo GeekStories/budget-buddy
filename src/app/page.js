@@ -55,7 +55,7 @@ export default function Home() {
   return (
     <div className="flex flex-col gap-4 m-auto w-full md:w-2/3 lg:w-1/2 h-full p-2 bg-slate-200 rounded-lg">
       <div className="flex gap-1 w-full bg-slate-100">
-        <div className="w-full h-full bg-white rounded-lg p-2 min-h-96 text-center">
+        <div className="w-full h-full bg-white rounded-lg p-2 min-h-32 md:min-h-96 text-center">
           {ExpensesList.map((expense, index) => (
             <div
               key={`expense_${index}`}
@@ -66,7 +66,7 @@ export default function Home() {
             </div>
           ))}
         </div>
-        <div className="w-full h-full bg-white rounded-lg p-2 min-h-96 text-center">
+        <div className="w-full h-full bg-white rounded-lg p-2 min-h-32 md:min-h-96 text-center">
           {IncomeList.map((income, index) => (
             <div
               key={`income_${index}`}
