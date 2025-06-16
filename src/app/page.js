@@ -45,7 +45,7 @@ export default function Home() {
       IncomeList.reduce((prev, curr) => prev + curr.amount, 0) -
       ExpensesList.reduce((prev, curr) => prev + curr.amount, 0);
 
-    SetRemainingBalance(balance);
+    SetRemainingBalance(balance.toFixed(2));
   }
 
   useEffect(() => {
