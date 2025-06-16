@@ -15,7 +15,7 @@ export default function Home() {
     if (DescriptionValue != "") {
       SetExpensesListState((state) => [
         ...state,
-        { amount: parseInt(AmountValue), desc: DescriptionValue },
+        { amount: parseFloat(AmountValue), desc: DescriptionValue },
       ]);
     }
   }
@@ -29,7 +29,7 @@ export default function Home() {
     if (DescriptionValue != "") {
       SetIncomeListState((state) => [
         ...state,
-        { amount: parseInt(AmountValue), desc: DescriptionValue },
+        { amount: parseFloat(AmountValue), desc: DescriptionValue },
       ]);
     }
   }
